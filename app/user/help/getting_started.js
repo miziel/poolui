@@ -53,7 +53,7 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 		type: 'Username',
 		sample: '1KEJ7EJvfD2bpL6vA9nJpTEgoS9P5jdyce',
 		desc: 'BTC Withdrawal (Will process through xmr.to or shapeshift.io automatically)',
-		valid: false
+		valid: false // this seems to make no difference? The configuration is displayed whether this is set to true or false
 	},*/
 	/*{ // BTC withdrawal not allowed
 		type: 'Username',
@@ -64,13 +64,13 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	{
 		type: 'Password',
 		sample: 'Steve',
-		desc: 'Worker identifier of Steve',
+		desc: 'Miner identifier of Steve',
 		valid: true
 	},
 	{
 		type: 'Password',
 		sample: 'Steve:test@e-mail.com',
-		desc: 'Worker identifier of Steve, and register an account with the e-mail address as password',
+		desc: 'Miner identifier of Steve, and register an account with the e-mail address as password',
 		valid: true
 	},
 	/*{ // removed because it may confuse people
